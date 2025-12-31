@@ -24,7 +24,7 @@ def analyze_scores(scores):
     # Classify performance based on average score
     if average >= 80:
         performance = "Excellent"
-    elif average >= 60:
+    elif average >= 65
         performance = "Good"
     elif average >= 40:
         performance = "Average"
