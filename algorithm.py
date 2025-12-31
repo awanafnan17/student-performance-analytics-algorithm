@@ -14,8 +14,11 @@ def analyze_scores(scores):
     count = 0
     # Iterate through each score to compute total and count
     for score in scores:
-        total += score
-        count += 1
+            # Skip negative scores
+    if score < 0:
+        continue
+    total += score
+    count += 1
     # Avoid division by zero
     average = total / count if count > 0 else 0
     # Classify performance based on average score
